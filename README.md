@@ -1,4 +1,4 @@
-# Programa montecarlo
+# Programa Montecarlo
 
 Este código realiza una simulación de Monte Carlo para modelar las ganancias en un almacén informático en función de las ventas de licencias de un sistema operativo.
 
