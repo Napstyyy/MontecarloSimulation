@@ -23,22 +23,38 @@ distribucionProbabilidades = [(100, 0.30), (150, 0.20), (200, 0.30), (250, 0.15)
 
 # Realiza simulaciones de Monte Carlo con diferentes cantidades de observaciones
 observaciones1000 = simulacionMonteCarlo(distribucionProbabilidades, 1000)
+print(observaciones1000)
 observaciones2000 = simulacionMonteCarlo(distribucionProbabilidades, 2000)
+print(observaciones2000)
 observaciones5000 = simulacionMonteCarlo(distribucionProbabilidades, 5000)
+print(observaciones5000)
 
 # Calcula estadísticas para cada conjunto de observaciones
 promedio1000 = np.mean(observaciones1000)
+print(promedio1000)
 promedio2000 = np.mean(observaciones2000)
+print(promedio2000)
 promedio5000 = np.mean(observaciones5000)
+print(promedio5000)
+
 varianza1000 = np.var(observaciones1000)
+print(varianza1000)
 varianza2000 = np.var(observaciones2000)
+print(varianza2000)
 varianza5000 = np.var(observaciones5000)
+print(varianza5000)
 desviacion1000 = np.sqrt(varianza1000)
+print(desviacion1000)
 desviacion2000 = np.sqrt(varianza2000)
+print(desviacion2000)
 desviacion5000 = np.sqrt(varianza5000)
+print(desviacion5000)
 cv1000 = (desviacion1000 / promedio1000) * 100
+print(cv1000)
 cv2000 = (desviacion2000 / promedio2000) * 100
+print(cv2000)
 cv5000 = (desviacion5000 / promedio5000) * 100
+print(cv5000)
 
 # Definir colores específicos para cada observación
 colores = ['b', 'g', 'r']
